@@ -26,9 +26,7 @@ const Books = () => {
   }, [])
   return (
     <div className='booksContainer'>
-      {isLoading && (
-        <p style={{ color: 'black' }}>Loading books from Goodreads...</p>
-      )}
+      {isLoading && <p className='loading'>Loading books from Goodreads...</p>}
       <ul>
         {!isLoading &&
           books.map((book, index) => (

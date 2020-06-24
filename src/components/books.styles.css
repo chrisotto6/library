@@ -5,7 +5,7 @@ ul {
   padding: 10px;
 }
 
-booksContainer {
+.booksContainer {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -13,4 +13,11 @@ booksContainer {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
+}
+
+.loading {
+  color: black;
+  text-align: center;
+  padding: 50px;
+  font-size: 24px;
 }
