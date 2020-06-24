@@ -1,7 +1,7 @@
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 white;
-  flex: 5 5 calc(20% - 10px);
+  flex: 5 5 calc(25% - 10px);
   display: flex;
   list-style: none;
   flex-direction: column;
