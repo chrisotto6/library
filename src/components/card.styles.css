@@ -1,0 +1,39 @@
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 white;
+  flex: 5 5 calc(25% - 10px);
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  transition: 0.3s;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  max-width: 100%;
+  margin: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 4px 10px 0 #282c34;
+}
+
+header {
+  padding: 10px;
+  position: relative;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+h4,
+h5 {
+  padding: 5px 0 5px 0;
+  margin: 5px 0;
+}
+
+.link {
+  padding: 10px 0 10px 0;
+}
