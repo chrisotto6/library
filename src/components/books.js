@@ -7,9 +7,8 @@ const Books = () => {
   const [books, setBooks] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
-  const parser = xml2js.Parser({ explicitArray: false })
-
   useEffect(() => {
+    const parser = xml2js.Parser({ explicitArray: false })
     fetch(
       `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=read&sort=date_read&per_page=60&key=${process.env.REACT_APP_API_KEY}`,
       {
@@ -25,12 +24,11 @@ const Books = () => {
         })
       })
       .catch((error) => console.log(error))
-  }, [parser])
+  }, [])
   return (
     <div className='booksContainer'>
       {isLoading && <p className='loading'>Loading books from Goodreads...</p>}
       <ul>
-        {!isLoading && console.log(books)}
         {!isLoading &&
           books.map((book, index) => (
             <Card book={book.book} rating={book.rating} key={index} />
