@@ -34,6 +34,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "react-test-renderer": "^16.13.1"
+  },
   "proxy": "https://www.goodreads.com"
 }
