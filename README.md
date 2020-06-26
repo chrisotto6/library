@@ -4,11 +4,11 @@ An application that shows my latest reads logged in Goodreads.
 
 ## Available Scripts
 
-### `yarn start`
+`yarn start`
 
-### `yarn test`
+`yarn test`
 
-### `yarn build`
+`yarn build`
 
 ## Create-React-App Docs
 
