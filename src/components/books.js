@@ -8,17 +8,18 @@ const Books = () => {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
+    const parser = xml2js.Parser({ explicitArray: false })
     fetch(
-      `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=read&sort=date_read&per_page=200&key=${process.env.REACT_APP_API_KEY}`,
+      `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=read&sort=date_read&per_page=60&key=${process.env.REACT_APP_API_KEY}`,
       {
         method: 'GET',
       }
     )
       .then((res) => res.text())
       .then((response) => {
-        xml2js.parseString(response, (err, res) => {
+        parser.parseString(response, (err, res) => {
           if (err) console.log(err)
-          setBooks(res.GoodreadsResponse.reviews[0].review)
+          setBooks(res.GoodreadsResponse.reviews.review)
           setIsLoading(false)
         })
       })
@@ -30,7 +31,7 @@ const Books = () => {
       <ul>
         {!isLoading &&
           books.map((book, index) => (
-            <Card book={book.book[0]} rating={book.rating[0]} key={index} />
+            <Card book={book.book} rating={book.rating} key={index} />
           ))}
       </ul>
     </div>
