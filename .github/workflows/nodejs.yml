@@ -4,7 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY	}}
+      REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
     strategy:
       matrix:
         node-version: [12.x]
