@@ -11,22 +11,20 @@ const Card = (props) => {
 
   return (
     <>
-      <li className='card'>
+      <li className="card">
         <header>
           <div>
             <img src={image_url} alt={title} />
           </div>
         </header>
-        <section className='container'>
+        <section className="container">
           <h4>{title_without_series}</h4>
           <h5>{authors.author.name}</h5>
-          <StarRatingComponent
-            name={''}
-            value={Number(rating)}
-            editing={false}
-          />
-          <div className='link'>
-            <a href={link}>Goodreads Page</a>
+          <StarRatingComponent name={''} value={Number(rating)} editing={false} />
+          <div className="link">
+            <a href={link} target="_blank" rel="noreferrer">
+              Goodreads Page
+            </a>
           </div>
         </section>
       </li>
