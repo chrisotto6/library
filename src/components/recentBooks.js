@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import xml2js from 'xml2js'
 import Card from './card'
-import './books.styles.css'
+import './recentBooks.styles.css'
 
-const Books = () => {
+const RecentBooks = () => {
   const [books, setBooks] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
@@ -26,16 +26,13 @@ const Books = () => {
       .catch((error) => console.log(error))
   }, [])
   return (
-    <div className='booksContainer'>
-      {isLoading && <p className='loading'>Loading books from Goodreads...</p>}
+    <div className="booksContainer">
+      {isLoading && <p className="loading">Loading books from Goodreads...</p>}
       <ul>
-        {!isLoading &&
-          books.map((book, index) => (
-            <Card book={book.book} rating={book.rating} key={index} />
-          ))}
+        {!isLoading && books.map((book, index) => <Card book={book.book} rating={book.rating} key={index} />)}
       </ul>
     </div>
   )
 }
 
-export default Books
+export default RecentBooks

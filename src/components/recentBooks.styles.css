@@ -6,6 +6,9 @@ ul {
 }
 
 .booksContainer {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -20,4 +23,5 @@ ul {
   text-align: center;
   padding: 50px;
   font-size: 24px;
+  height: 100vh;
 }

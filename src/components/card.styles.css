@@ -1,4 +1,4 @@
-.card {
+.bookCard {
   /* Add shadows to create the "card" effect */
   flex: 5 5 calc(20% - 10px);
   display: flex;
@@ -14,10 +14,9 @@
 }
 
 /* On mouse-over, add a deeper shadow */
-.card:hover {
+.bookCard:hover {
   background-color: white;
-  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
-    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
 header {
@@ -26,7 +25,7 @@ header {
 }
 
 /* Add some padding inside the card container */
-.container {
+.cardContainer {
   padding: 2px 16px;
 }
 
@@ -37,5 +36,5 @@ h5 {
 }
 
 .link {
-  padding: 10px 0 10px 0;
+  padding: 0 0 10px 0;
 }

@@ -4,14 +4,85 @@ exports[`App Snapshot Matches 1`] = `
 <div
   className="App"
 >
-  <header
-    className="App-header"
+  <div
+    className="navigation"
   >
-    Library
-  </header>
-  <p>
-    These are all of my recently read books on Goodreads. Most recent at the top, along with ratings and links out to the Goodreads book's page. This application was made using the Goodreads API.
-  </p>
+    <nav
+      class="navbar navbar-expand-sm navbar-dark bg-secondary justify-content-between"
+    >
+      <div
+        class="container-fluid"
+      >
+        <a
+          class="navbar-brand"
+          href="/"
+          onClick={[Function]}
+        >
+          Library
+        </a>
+        <button
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler"
+          data-target="#navbarResponsive"
+          data-toggle="collapse"
+          type="button"
+        >
+          <span
+            class="navbar-toggler-icon"
+          />
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarResponsive"
+        >
+          <ul
+            class="navbar-nav ml-auto"
+          >
+            <li
+              class="nav-item  active"
+            >
+              <a
+                class="nav-link"
+                href="/"
+                onClick={[Function]}
+              >
+                Recently Read
+                <span
+                  class="sr-only"
+                >
+                  (current)
+                </span>
+              </a>
+            </li>
+            <li
+              class="nav-item  "
+            >
+              <a
+                class="nav-link"
+                href="/to-read"
+                onClick={[Function]}
+              >
+                To Read
+              </a>
+            </li>
+            <li
+              class="nav-item  "
+            >
+              <a
+                class="nav-link"
+                href="/highly-rated"
+                onClick={[Function]}
+              >
+                Highly Rated
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
   <div
     className="booksContainer"
   >
@@ -21,6 +92,24 @@ exports[`App Snapshot Matches 1`] = `
       Loading books from Goodreads...
     </p>
     <ul />
+  </div>
+  <div
+    className="footer"
+  >
+    <footer
+      class="py-4 navbar-dark bg-secondary"
+    >
+      <div
+        class="container"
+      >
+        <p
+          class="m-0 text-center text-white"
+        >
+          Copyright © Chris Otto 
+          2020
+        </p>
+      </div>
+    </footer>
   </div>
 </div>
 `;

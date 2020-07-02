@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Card from '../../components/card'
+import { Card } from '../../components'
 
 const book = {
   title: 'Test (The Testing #1)',

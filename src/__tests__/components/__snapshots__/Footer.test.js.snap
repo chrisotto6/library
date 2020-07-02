@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Matches 1`] = `
+<div
+  className="footer"
+>
+  <footer
+    class="py-4 navbar-dark bg-secondary"
+  >
+    <div
+      class="container"
+    >
+      <p
+        class="m-0 text-center text-white"
+      >
+        Copyright © Chris Otto 
+        2020
+      </p>
+    </div>
+  </footer>
+</div>
+`;
