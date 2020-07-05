@@ -4,13 +4,13 @@ import { Link, withRouter } from 'react-router-dom'
 const Navigation = (props) => {
   return (
     <div className="navigation">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-secondary justify-content-between">
-        <div class="container-fluid">
-          <Link class="navbar-brand" to="/">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-secondary justify-content-between">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/">
             Library
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarResponsive"
@@ -18,23 +18,23 @@ const Navigation = (props) => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class={`nav-item  ${props.location.pathname === '/' ? 'active' : ''}`}>
-                <Link class="nav-link" to="/">
+          <div className="collapse navbar-collapse" id="navbarResponsive">
+            <ul className="navbar-nav ml-auto">
+              <li className={`nav-item  ${props.location.pathname === '/' ? 'active' : ''}`}>
+                <Link className="nav-link" to="/">
                   Recently Read
-                  <span class="sr-only">(current)</span>
+                  <span className="sr-only">(current)</span>
                 </Link>
               </li>
-              <li class={`nav-item  ${props.location.pathname === '/to-read' ? 'active' : ''}`}>
-                <Link class="nav-link" to="/to-read">
+              <li className={`nav-item  ${props.location.pathname === '/to-read' ? 'active' : ''}`}>
+                <Link className="nav-link" to="/to-read">
                   To Read
                 </Link>
               </li>
-              <li class={`nav-item  ${props.location.pathname === '/highly-rated' ? 'active' : ''}`}>
-                <Link class="nav-link" to="/highly-rated">
+              <li className={`nav-item  ${props.location.pathname === '/highly-rated' ? 'active' : ''}`}>
+                <Link className="nav-link" to="/highly-rated">
                   Highly Rated
                 </Link>
               </li>

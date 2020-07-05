@@ -20,7 +20,7 @@ const Card = (props) => {
         <section className="cardContainer">
           <h4 className="h4 small">{title_without_series}</h4>
           <h5 className="h5 small">{authors.author.name}</h5>
-          <StarRatingComponent name={''} value={Number(rating)} editing={false} />
+          <StarRatingComponent name={''} value={Math.round(Number(rating))} editing={false} />
           <div className="link">
             <a href={link} target="_blank" rel="noopener noreferrer" className="h5 small">
               Goodreads Page
