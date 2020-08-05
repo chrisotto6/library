@@ -1,7 +1,7 @@
 import React from 'react'
 import useFetch from '../hooks/useFetch'
 import Card from './card'
-import './recentBooks.styles.css'
+import './bookList.styles.css'
 
 const ToReadBooks = () => {
   const url = `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=to-read&sort=avg_rating&per_page=100&key=${process.env.REACT_APP_API_KEY}`

@@ -1,10 +1,10 @@
 import React from 'react'
 import useFetch from '../hooks/useFetch'
 import Card from './card'
-import './recentBooks.styles.css'
+import './bookList.styles.css'
 
 const RecentBooks = () => {
-  const url = `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=read&sort=date_read&per_page=60&key=${process.env.REACT_APP_API_KEY}`
+  const url = `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=read&sort=date_read&per_page=100&key=${process.env.REACT_APP_API_KEY}`
   const [data, isLoading] = useFetch(url, [])
 
   return (
