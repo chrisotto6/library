@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Books Snapshot Matches 1`] = `
+exports[`ToReadBooks Snapshot Matches 1`] = `
 <div
   className="booksContainer"
 >

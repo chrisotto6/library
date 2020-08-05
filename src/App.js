@@ -1,17 +1,20 @@
 import React from 'react'
-import Books from './components/books'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Footer, Navigation, RecentBooks, ToReadBooks, HighlyRated } from './components'
 import './App.css'
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>Library</header>
-      <p>
-        These are all of my recently read books on Goodreads. Most recent at the
-        top, along with ratings and links out to the Goodreads book's page. This
-        application was made using the Goodreads API.
-      </p>
-      <Books />
+    <div className="App">
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route path="/" exact component={() => <RecentBooks />} />
+          <Route path="/to-read" exact component={() => <ToReadBooks />} />
+          <Route path="/highly-rated" exact component={() => <HighlyRated />} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   )
 }

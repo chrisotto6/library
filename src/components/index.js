@@ -1,0 +1,6 @@
+export { default as RecentBooks } from './recentBooks'
+export { default as Navigation } from './navigation'
+export { default as Footer } from './footer'
+export { default as Card } from './card'
+export { default as ToReadBooks } from './toReadBooks'
+export { default as HighlyRated } from './highlyRated'

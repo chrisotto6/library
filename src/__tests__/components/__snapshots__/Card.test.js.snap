@@ -2,7 +2,7 @@
 
 exports[`App Snapshot Matches 1`] = `
 <li
-  className="card"
+  className="bookCard"
 >
   <header>
     <div>
@@ -13,12 +13,16 @@ exports[`App Snapshot Matches 1`] = `
     </div>
   </header>
   <section
-    className="container"
+    className="cardContainer"
   >
-    <h4>
+    <h4
+      className="h4 small"
+    >
       Test
     </h4>
-    <h5>
+    <h5
+      className="h5 small"
+    >
       Chris Otto
     </h5>
     <div
@@ -235,7 +239,10 @@ exports[`App Snapshot Matches 1`] = `
       className="link"
     >
       <a
+        className="h5 small"
         href="https://www.goodreads.com/book/show/6043781-blood-of-elves"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         Goodreads Page
       </a>
