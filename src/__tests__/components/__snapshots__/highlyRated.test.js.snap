@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HighlyRated Snapshot Matches 1`] = `
+<div
+  className="booksContainer"
+>
+  <p
+    className="loading"
+  >
+    Loading books from Goodreads...
+  </p>
+  <ul />
+</div>
+`;

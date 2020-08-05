@@ -8,13 +8,13 @@ exports[`App Snapshot Matches 1`] = `
     className="navigation"
   >
     <nav
-      class="navbar navbar-expand-sm navbar-dark bg-secondary justify-content-between"
+      className="navbar navbar-expand-sm navbar-dark bg-secondary justify-content-between"
     >
       <div
-        class="container-fluid"
+        className="container-fluid"
       >
         <a
-          class="navbar-brand"
+          className="navbar-brand"
           href="/"
           onClick={[Function]}
         >
@@ -24,43 +24,43 @@ exports[`App Snapshot Matches 1`] = `
           aria-controls="navbarResponsive"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          class="navbar-toggler"
+          className="navbar-toggler"
           data-target="#navbarResponsive"
           data-toggle="collapse"
           type="button"
         >
           <span
-            class="navbar-toggler-icon"
+            className="navbar-toggler-icon"
           />
         </button>
         <div
-          class="collapse navbar-collapse"
+          className="collapse navbar-collapse"
           id="navbarResponsive"
         >
           <ul
-            class="navbar-nav ml-auto"
+            className="navbar-nav ml-auto"
           >
             <li
-              class="nav-item  active"
+              className="nav-item  active"
             >
               <a
-                class="nav-link"
+                className="nav-link"
                 href="/"
                 onClick={[Function]}
               >
                 Recently Read
                 <span
-                  class="sr-only"
+                  className="sr-only"
                 >
                   (current)
                 </span>
               </a>
             </li>
             <li
-              class="nav-item  "
+              className="nav-item  "
             >
               <a
-                class="nav-link"
+                className="nav-link"
                 href="/to-read"
                 onClick={[Function]}
               >
@@ -68,10 +68,10 @@ exports[`App Snapshot Matches 1`] = `
               </a>
             </li>
             <li
-              class="nav-item  "
+              className="nav-item  "
             >
               <a
-                class="nav-link"
+                className="nav-link"
                 href="/highly-rated"
                 onClick={[Function]}
               >
@@ -97,13 +97,13 @@ exports[`App Snapshot Matches 1`] = `
     className="footer"
   >
     <footer
-      class="py-4 navbar-dark bg-secondary"
+      className="py-4 navbar-dark bg-secondary"
     >
       <div
-        class="container"
+        className="container"
       >
         <p
-          class="m-0 text-center text-white"
+          className="m-0 text-center text-white"
         >
           Copyright © Chris Otto 
           2020

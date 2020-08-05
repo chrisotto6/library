@@ -5,13 +5,13 @@ exports[`Footer Matches 1`] = `
   className="footer"
 >
   <footer
-    class="py-4 navbar-dark bg-secondary"
+    className="py-4 navbar-dark bg-secondary"
   >
     <div
-      class="container"
+      className="container"
     >
       <p
-        class="m-0 text-center text-white"
+        className="m-0 text-center text-white"
       >
         Copyright © Chris Otto 
         2020
