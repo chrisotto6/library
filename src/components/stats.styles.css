@@ -1,0 +1,13 @@
+.statsContainer {
+  padding: 20px 0px 20px 0px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

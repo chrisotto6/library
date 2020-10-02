@@ -78,6 +78,17 @@ exports[`App Snapshot Matches 1`] = `
                 Highly Rated
               </a>
             </li>
+            <li
+              className="nav-item  "
+            >
+              <a
+                className="nav-link"
+                href="/stats"
+                onClick={[Function]}
+              >
+                Stats
+              </a>
+            </li>
           </ul>
         </div>
       </div>

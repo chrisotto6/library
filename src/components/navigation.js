@@ -38,6 +38,11 @@ const Navigation = (props) => {
                   Highly Rated
                 </Link>
               </li>
+              <li className={`nav-item  ${props.location.pathname === '/stats' ? 'active' : ''}`}>
+                <Link className="nav-link" to="/stats">
+                  Stats
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

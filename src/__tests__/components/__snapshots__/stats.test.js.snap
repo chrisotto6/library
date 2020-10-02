@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stats Snapshot Matches 1`] = `
+<div
+  className="statsContainer"
+  data-year="2019"
+>
+  <p
+    className="loading"
+  >
+    Loading data from Goodreads...
+  </p>
+</div>
+`;
