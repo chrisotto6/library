@@ -1,5 +1,6 @@
 import React from 'react'
 import useFetch from '../hooks/useFetch'
+import './stats.styles.css'
 
 const Stats = (props) => {
   const { year } = props
@@ -21,24 +22,24 @@ const Stats = (props) => {
   data.map((book) => {
     totalPages += Number(book.book.num_pages)
     if (longestPages < book.book.num_pages) {
-      longestBook = book.book.title
+      longestBook = book.book.title_without_series
       longestPages = Number(book.book.num_pages)
     }
-    if (shortestPages > book.book.num_pages) {
-      shortestBook = book.book.title
+    if (shortestPages > book.book.num_pages && book.book.num_pages > 30) {
+      shortestBook = book.book.title_without_series
       shortestPages = Number(book.book.num_pages)
     }
   })
 
-  const averagePages = totalPages / totalBooks
+  const averagePages = Math.floor(totalPages / totalBooks)
 
   return (
     <div className="statsContainer" data-year={year}>
       {isLoading && <p className="loading">Loading data from Goodreads...</p>}
 
       {!isLoading && (
-        <table class="table">
-          <thead class="thead-dark">
+        <table className="table table-bordered table-hover">
+          <thead className="thead-dark">
             <tr>
               <th scope="col">{year}</th>
               <th scope="col"></th>
@@ -51,11 +52,11 @@ const Stats = (props) => {
             </tr>
             <tr>
               <td>Total Pages</td>
-              <td>{numberWithCommas(totalPages)}</td>
+              <td>{numberWithCommas(totalPages)} pages</td>
             </tr>
             <tr>
               <td>Average Pages</td>
-              <td>{Math.floor(averagePages)}</td>
+              <td>{averagePages} pages</td>
             </tr>
             <tr>
               <td>Shortest Book</td>
