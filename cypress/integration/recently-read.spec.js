@@ -1,4 +1,4 @@
-describe('Navigation', () => {
+describe('Recently Read', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
   })

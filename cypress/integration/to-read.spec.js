@@ -1,4 +1,4 @@
-describe('Navigation', () => {
+describe('To Read', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000')
     cy.get('.nav-link').contains('To Read').click()
