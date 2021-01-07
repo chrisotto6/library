@@ -116,7 +116,7 @@ exports[`App Snapshot Matches 1`] = `
         <p
           className="m-0 text-center text-white"
         >
-          Copyright © Chris Otto
+          Copyright © Chris Otto 
           2021
         </p>
       </div>
