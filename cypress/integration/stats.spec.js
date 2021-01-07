@@ -6,7 +6,7 @@ describe('Stats', () => {
 
   it('Should load the nav, table and footer', () => {
     cy.wait(5000)
-    cy.get('.App>').children().should('have.length', 4)
+    cy.get('.App>').children().should('have.length', 5)
   })
 
   it('Table should have correct row labels', () => {

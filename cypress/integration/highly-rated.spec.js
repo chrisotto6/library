@@ -5,7 +5,7 @@ describe('Highly Rated', () => {
   })
 
   it('Should load the cards', () => {
-    cy.wait(7000)
+    cy.wait(10000)
     cy.get('.booksContainer>ul').children().should('have.length', 100)
   })
 
