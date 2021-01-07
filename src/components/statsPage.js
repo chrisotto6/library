@@ -4,8 +4,8 @@ import { Stats } from '../components'
 const RecentBooks = () => {
   return (
     <>
-      <Stats year="2019" />
       <Stats year="2020" />
+      <Stats year="2019" />
     </>
   )
 }
