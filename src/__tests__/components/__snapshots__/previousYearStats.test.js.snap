@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviousYearStats Snapshot Matches 1`] = `
+<div
+  className="statsContainer"
+  data-year="2019"
+>
+  <table
+    className="table table-bordered table-hover"
+  >
+    <thead
+      className="thead-dark"
+    >
+      <tr>
+        <th
+          scope="col"
+        >
+          2019
+        </th>
+        <th
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Total Books
+        </td>
+        <td>
+          70
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Total Pages
+        </td>
+        <td>
+          15,479
+           pages
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Average Pages
+        </td>
+        <td>
+          221
+           pages
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Shortest Book
+        </td>
+        <td>
+          Deadpool Kills Deadpool
+          : 
+          1
+           pages
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Longest Book
+        </td>
+        <td>
+          American Gods
+          : 
+          674
+           pages
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
