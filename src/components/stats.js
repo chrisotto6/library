@@ -35,9 +35,19 @@ const Stats = (props) => {
 
   return (
     <div className="statsContainer" data-year={year}>
-      {isLoading && <p className="loading">Loading data from Goodreads...</p>}
-
-      {!isLoading && (
+      {isLoading ? (
+        <table className="table table-bordered table-hover">
+          <thead className="thead-dark">
+            <tr>
+              <th scope="col">{year}</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="statsLoading">Loading data from Goodreads...</tr>
+          </tbody>
+        </table>
+      ) : (
         <table className="table table-bordered table-hover">
           <thead className="thead-dark">
             <tr>
