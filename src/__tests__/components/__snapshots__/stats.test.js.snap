@@ -3,12 +3,32 @@
 exports[`Stats Snapshot Matches 1`] = `
 <div
   className="statsContainer"
-  data-year="2019"
+  data-year="2021"
 >
-  <p
-    className="loading"
+  <table
+    className="table table-bordered table-hover"
   >
-    Loading data from Goodreads...
-  </p>
+    <thead
+      className="thead-dark"
+    >
+      <tr>
+        <th
+          scope="col"
+        >
+          2021
+        </th>
+        <th
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="statsLoading"
+      >
+        Loading data from Goodreads...
+      </tr>
+    </tbody>
+  </table>
 </div>
 `;
