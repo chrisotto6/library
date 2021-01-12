@@ -17,9 +17,6 @@ exports[`Stats Snapshot Matches 1`] = `
         >
           2021
         </th>
-        <th
-          scope="col"
-        />
       </tr>
     </thead>
     <tbody>
