@@ -6,7 +6,7 @@ describe('To Read', () => {
 
   it('Should load the cards', () => {
     cy.wait(5000)
-    cy.get('.booksContainer>ul').children().should('have.length', 100)
+    cy.get('.booksContainer>ul').children().should('have.length', 60)
   })
 
   it('Book cards should load correcly', () => {
