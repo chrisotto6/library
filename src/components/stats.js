@@ -40,7 +40,6 @@ const Stats = (props) => {
           <thead className="thead-dark">
             <tr>
               <th scope="col">{year}</th>
-              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>
