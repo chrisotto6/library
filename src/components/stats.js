@@ -20,15 +20,15 @@ const Stats = (props) => {
 
   // eslint-disable-next-line
   data.map((book) => {
-      totalPages += Number(book.book.num_pages)
-      if (longestPages < book.book.num_pages) {
-        longestBook = book.book.title_without_series
-        longestPages = Number(book.book.num_pages)
-      }
-      if (shortestPages > book.book.num_pages && book.book.num_pages > 30) {
-        shortestBook = book.book.title_without_series
-        shortestPages = Number(book.book.num_pages)
-      }
+    totalPages += Number(book.book.num_pages)
+    if (longestPages < book.book.num_pages) {
+      longestBook = book.book.title_without_series
+      longestPages = Number(book.book.num_pages)
+    }
+    if (shortestPages > book.book.num_pages && book.book.num_pages > 30) {
+      shortestBook = book.book.title_without_series
+      shortestPages = Number(book.book.num_pages)
+    }
   })
 
   const audiobooksFilter = data
