@@ -31,7 +31,10 @@ const Stats = (props) => {
     }
   })
 
-  const averagePages = Math.floor(totalPages / totalBooks)
+  const audiobooksFilter = data
+    .filter(audiobook => audiobook.book.format !== 'Audiobook')
+    .filter(pages => pages.book.num_pages > 30);
+  const averagePages = Math.floor(totalPages / audiobooksFilter.length);
 
   return (
     <div className="statsContainer" data-year={year}>
