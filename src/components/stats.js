@@ -19,7 +19,7 @@ const Stats = (props) => {
   let shortestPages = 1000
 
   // eslint-disable-next-line
-  data.map((book) => {
+  data.filter(audiobook => audiobook.book.format !== 'Audiobook').map((book) => {
     totalPages += Number(book.book.num_pages)
     if (longestPages < book.book.num_pages) {
       longestBook = book.book.title_without_series
