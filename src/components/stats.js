@@ -19,19 +19,22 @@ const Stats = (props) => {
   let shortestPages = 1000
 
   // eslint-disable-next-line
-  data.filter(audiobook => audiobook.book.format !== 'Audiobook').map((book) => {
-    totalPages += Number(book.book.num_pages)
-    if (longestPages < book.book.num_pages) {
-      longestBook = book.book.title_without_series
-      longestPages = Number(book.book.num_pages)
-    }
-    if (shortestPages > book.book.num_pages && book.book.num_pages > 30) {
-      shortestBook = book.book.title_without_series
-      shortestPages = Number(book.book.num_pages)
-    }
+  data.map((book) => {
+      totalPages += Number(book.book.num_pages)
+      if (longestPages < book.book.num_pages) {
+        longestBook = book.book.title_without_series
+        longestPages = Number(book.book.num_pages)
+      }
+      if (shortestPages > book.book.num_pages && book.book.num_pages > 30) {
+        shortestBook = book.book.title_without_series
+        shortestPages = Number(book.book.num_pages)
+      }
   })
 
-  const averagePages = Math.floor(totalPages / totalBooks)
+  const audiobooksFilter = data
+    .filter(audiobook => audiobook.book.format !== 'Audiobook')
+    .filter(pages => pages.book.num_pages > 30);
+  const averagePages = Math.floor(totalPages / audiobooksFilter);
 
   return (
     <div className="statsContainer" data-year={year}>
