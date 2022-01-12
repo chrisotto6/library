@@ -11,7 +11,7 @@ describe('Stats', () => {
 
   it('Table should have correct row labels', () => {
     cy.wait(5000)
-    cy.get('.statsContainer>table>tbody').first().children().should('have.length', 5).should('be.visible')
+    cy.get('.statsContainer>table>tbody').first().children().should('have.length', 6).should('be.visible')
     cy.get('.statsContainer>table>tbody>tr:first').contains('Total Books')
     cy.get('.statsContainer>table>tbody>tr:first').next().contains('Total Pages')
     cy.get('.statsContainer>table>tbody>tr:first').next().next().contains('Average Pages')
