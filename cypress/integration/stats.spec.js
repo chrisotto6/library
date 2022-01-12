@@ -4,9 +4,9 @@ describe('Stats', () => {
     cy.get('.nav-link').contains('Stats').click()
   })
 
-  it('Should load the nav, table and footer', () => {
+  it('Should load the nav, tables and footer', () => {
     cy.wait(5000)
-    cy.get('.App>').children().should('have.length', 5)
+    cy.get('.App>').children().should('have.length', 6)
   })
 
   it('Table should have correct row labels', () => {

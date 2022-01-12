@@ -4,7 +4,17 @@ import { Stats, PreviousYearStats } from '../components'
 const RecentBooks = () => {
   return (
     <>
-      <Stats year="2021" />
+      <Stats year="2022" />
+      <PreviousYearStats
+        year="2021"
+        totalBooks="221"
+        totalPages="52699"
+        longestBook="Oathbringer"
+        longestPages="1248"
+        shortestBook="Cable and Deadpool #17"
+        shortestPages="20"
+        averagePages="238"
+      />
       <PreviousYearStats
         year="2020"
         totalBooks="219"
