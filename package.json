@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^12.8.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-icons": "^4.2.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-star-rating-component": "^1.4.1",
