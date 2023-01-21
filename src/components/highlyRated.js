@@ -4,7 +4,7 @@ import Card from './card'
 import './bookList.styles.css'
 
 const HighlyRated = () => {
-  const url = `https://cotto-cors.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=read&per_page=60&sort=rating&key=${process.env.REACT_APP_API_KEY}`
+  const url = `https://cors-anywhere-so1t.onrender.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=read&per_page=60&sort=rating&key=${process.env.REACT_APP_API_KEY}`
   const [data, isLoading] = useFetch(url, [])
   return (
     <div className="booksContainer">
