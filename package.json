@@ -19,9 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "lint": "node_modules/.bin/eslint --ext js src",
-    "cypress:open": "cypress open",
-    "test:cypress": "cypress run",
-    "e2e": "start-server-and-test start http://localhost:3000 test:cypress"
+    "cypress:open": "cypress open --e2e --browser chrome",
+    "cypress:run": "cypress run --e2e --browser chrome",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress:run"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "cypress": "^6.3.0",
+    "cypress": "^12.3.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.1.3",
     "eslint-plugin-import": "^2.22.1",
