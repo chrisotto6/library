@@ -9,7 +9,7 @@ const Stats = (props) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
   }
 
-  const url = `https://cotto-cors.herokuapp.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=read&sort=date_read&read_at=${year}&per_page=200&key=${process.env.REACT_APP_API_KEY}`
+  const url = `https://cors-anywhere-so1t.onrender.com/https://www.goodreads.com/review/list?v=2&id=96692540&shelf=read&sort=date_read&read_at=${year}&per_page=200&key=${process.env.REACT_APP_API_KEY}`
   const [data, isLoading] = useFetch(url, [])
   const totalBooks = data.length
   let longestBook = ''
@@ -32,9 +32,9 @@ const Stats = (props) => {
   })
 
   const audiobooksFilter = data
-    .filter(audiobook => audiobook.book.format !== 'Audiobook')
-    .filter(pages => pages.book.num_pages > 30);
-  const averagePages = Math.floor(totalPages / audiobooksFilter.length);
+    .filter((audiobook) => audiobook.book.format !== 'Audiobook')
+    .filter((pages) => pages.book.num_pages > 30)
+  const averagePages = Math.floor(totalPages / audiobooksFilter.length)
 
   return (
     <div className="statsContainer" data-year={year}>
